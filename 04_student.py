@@ -10,5 +10,16 @@
 #   Студенту надо попросить ХХХ.ХХ рублей
 
 educational_grant, expenses = 10000, 12000
-
+month = 1
+sum_educational = 0
+sum_expenses = 0
+while month <= 10:
+    month += 1
+    sum_educational += educational_grant
+    sum_expenses += expenses
+    expenses += ((expenses / 100) * 3)
+sum_rod = sum_expenses - sum_educational
+print("Всего дохода:", sum_educational)
+print("Расходов за 9 месяцев составляет:", round(sum_expenses, 2))
+print("Сумма денег которую нужно попросить у родителей:", round(sum_rod, 2))
 # TODO здесь ваш код

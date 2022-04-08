@@ -19,7 +19,7 @@ while month <= 10:
     sum_expenses += expenses
     expenses += ((expenses / 100) * 3)
 sum_rod = sum_expenses - sum_educational
-print("Всего дохода:", sum_educational)
-print("Расходов за 9 месяцев составляет:", round(sum_expenses, 2))
-print("Сумма денег которую нужно попросить у родителей:", round(sum_rod, 2))
+print("Всего дохода:", sum_educational, "руб.")
+print("Всего расходов за 10 месяцев составляет:", round(sum_expenses, 2), "руб.")
+print("Сумма денег которую нужно попросить у родителей:", round(sum_rod, 2), "руб.")
 # TODO здесь ваш код

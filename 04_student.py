@@ -13,11 +13,14 @@ educational_grant, expenses = 10000, 12000
 month = 1
 sum_educational = 0
 sum_expenses = 0
+
 while month <= 10:
     month += 1
     sum_educational += educational_grant
     sum_expenses += expenses
     expenses += ((expenses / 100) * 3)
-sum_rod = sum_expenses - sum_educational
-print("Всего дохода:", sum_educational, "руб.")
-print("Всего расходов за 10 месяцев составляет:", round(sum_expenses, 2), "руб.")
+sum_ob = sum_expenses - sum_educational
+
+print("Всего доходов за 10 месяцев:", sum_educational, "руб.")
+print("Всего расходов за 10 месяцев:", round(sum_expenses, 2), "руб.")
+print("У родителей нужно попросить:", round(sum_ob, 2), 'руб.')

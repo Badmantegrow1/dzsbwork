@@ -2,9 +2,8 @@
 
 # (определение функций)
 
+
 import random
-
-
 import simple_draw as sd
 
 
